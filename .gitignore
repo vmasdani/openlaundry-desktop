@@ -1,0 +1,7 @@
+css/tailwind.css
+js/script.js
+out
+node_modules
+elm-stuff
+env.json
+main.js

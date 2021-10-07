@@ -1,0 +1,44 @@
+{
+  "name": "svelte-app",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "start": "sirv public --no-clear",
+    "check": "svelte-check --tsconfig ./tsconfig.json",
+    "build-tailwind": "postcss tailwind.css -o src/tailwind.css",
+    "prod": "rm -rf src/tailwind.css && NODE_ENV=production postcss tailwind.css -o public/tailwind.css && npm run build"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^17.0.0",
+    "@rollup/plugin-node-resolve": "^11.0.0",
+    "@rollup/plugin-typescript": "^8.0.0",
+    "@tsconfig/svelte": "^2.0.0",
+    "autoprefixer": "^10.3.6",
+    "postcss": "^8.3.8",
+    "rollup": "^2.3.4",
+    "rollup-plugin-css-only": "^3.1.0",
+    "rollup-plugin-livereload": "^2.0.0",
+    "rollup-plugin-svelte": "^7.0.0",
+    "rollup-plugin-terser": "^7.0.0",
+    "svelte": "^3.0.0",
+    "svelte-check": "^2.0.0",
+    "svelte-preprocess": "^4.0.0",
+    "tailwindcss": "^2.2.16",
+    "tslib": "^2.0.0",
+    "typescript": "^4.0.0"
+  },
+  "dependencies": {
+    "@types/pako": "^1.0.2",
+    "@types/uuid": "^8.3.1",
+    "idb-keyval": "^6.0.2",
+    "pako": "^2.0.4",
+    "postcss-cli": "^9.0.0",
+    "sirv-cli": "^1.0.0",
+    "svelte-material-icons": "^1.0.3",
+    "svelte-routing": "^1.6.0",
+    "svelte-spa-router": "^3.2.0",
+    "uuid": "^8.3.2"
+  }
+}
